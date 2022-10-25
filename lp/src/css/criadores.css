@@ -1,0 +1,108 @@
+@media only screen and (max-width: 620px)
+{
+    #textoPrim
+    {
+        font-size: 2vmin; 
+    }
+}
+@media only screen and (max-width: 530px)
+{
+    .headerTxt
+    {
+        display: none;
+    }
+}
+main
+{
+    color:white;
+    margin: 2%;
+}
+#madeby
+{
+    text-align: center;
+    color:white;
+    font-size: 7vmin;
+    padding-top: 0%;
+    padding-bottom: 1%;
+    font-family: Nunito;
+}
+#name
+{
+    font-size: 5vmin;
+    font-family: Orbitron;
+    color: #7115F2;
+    text-align: center;
+    padding-bottom: 4vmin;
+    padding-top: 1vmin;
+}
+#autor
+{
+    text-align: center;
+    position: relative;
+}
+
+#foto
+{
+    height: 200px;
+    width: 200px;
+    text-align: center;
+}
+
+#textoPrim
+{
+    text-align: center;
+    padding-top: 5vmin;
+    padding-bottom: 4vmin;
+    font-size: 3vmin;
+    text-align: center;
+    color: #FFFFFF;
+    font-family: Nunito;
+    margin-left: 150px;
+    margin-right: 150px;
+    position:inherit;
+}
+
+#git
+{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#retroceder
+{
+
+    text-align: right;
+}
+#retroceder a:hover
+{
+    background-color: pink;
+}
+
+#ctt
+{
+    text-decoration: none;
+    position: 0;
+    text-align: center;
+    padding-bottom: 1vmin;
+}
+#ig a:hover
+{
+    border:4px dashed blue;
+    border-bottom: #FFFFFF;
+    border-style: solid;
+}
+.backf
+{
+    padding-top: 290px;
+}
+#roda
+{
+    padding-top: 20px;
+}
+
+#back{
+    cursor: pointer;
+}
+#divCreditos{
+    text-align: center;
+    background-color: #242424;;
+}
