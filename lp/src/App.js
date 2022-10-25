@@ -1,13 +1,13 @@
+
 import './App.css';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router} from 'react-router-dom'
-import Creditos from './components/Creditos/Creditos'
-
+import Sidebar from './components/Sidebar';
 function App() {
   return (
     <Router>
+     <Sidebar/>
      <Navbar/>
-     <Creditos />
     </Router>
   );
 }

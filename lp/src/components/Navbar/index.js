@@ -1,12 +1,12 @@
 import React from "react";
-import { NavItem } from "reactstrap";
+import {FaBars} from "react-icons/fa";
 import {
   Nav,
   NavbarContainer,
   Navlogo,
   MobileIcon,
-  FaBars,
   NavMenu,
+  NavItem,
   NavLinks,
 } from "./NavbarElements";
 const Navbar = () => {
@@ -20,7 +20,13 @@ const Navbar = () => {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about"> about </NavLinks>
+              <NavLinks to="inicio">Inicio</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="razorSite">Quem é a razor</NavLinks>
+            </NavItem>
+            <NavItem>
+              <NavLinks to="criadores">Criadores</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
