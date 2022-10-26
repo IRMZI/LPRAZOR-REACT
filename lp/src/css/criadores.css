@@ -23,8 +23,8 @@ main
     color:white;
     font-size: 7vmin;
     padding-top: 0%;
-    padding-bottom: 1%;
     font-family: Nunito;
+    margin-bottom: 0rem;
 }
 #name
 {
@@ -33,7 +33,6 @@ main
     color: #7115F2;
     text-align: center;
     padding-bottom: 4vmin;
-    padding-top: 1vmin;
 }
 #autor
 {
@@ -52,7 +51,7 @@ main
 {
     text-align: center;
     padding-top: 5vmin;
-    padding-bottom: 4vmin;
+    padding-bottom: 100vmax;
     font-size: 3vmin;
     text-align: center;
     color: #FFFFFF;
@@ -79,6 +78,7 @@ main
 
 #ctt
 {
+    padding-top:2vmin;
     text-decoration: none;
     position: 0;
     text-align: center;

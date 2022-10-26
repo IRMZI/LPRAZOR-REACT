@@ -1,3 +1,6 @@
+
+
+
 var posicao = 0;
 
 function Avancar() {
@@ -45,9 +48,16 @@ function Avancar() {
             document.getElementById('textoPrim').innerText='Desenvolvedor front-end | UI/UX';
         }
     }
+    const mudaCor = () => {
+        document.getElementById('avancar').src="https://img.icons8.com/ios-glyphs/60/7115F2/circled-right.png"
+    }
+
+    const voltaCor = () => {
+        document.getElementById('avancar').src="https://img.icons8.com/ios-glyphs/60/000000/circled-right.png"
+    }
   
     return (
-      <img  className="backf" id="avancar" src="https://img.icons8.com/ios-filled/50/000000/circled-right.png" onClick={Avancar} alt='->' ></img>
+      <img  className="backf" id="avancar" src="https://img.icons8.com/ios-filled/50/000000/circled-right.png" onMouseOver={mudaCor} onMouseOut={voltaCor} onClick={Avancar} alt='->' ></img>
     );
   }
 

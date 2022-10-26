@@ -3,6 +3,7 @@ var posicao = 0;
 function Voltar() {
     const recuar = () => {
         posicao -= 1;
+        
 
         if (posicao === -1) //numero minimo
         {
@@ -46,8 +47,16 @@ function Voltar() {
         }
     }
   
+    const mudaCor = () => {
+        document.getElementById('voltar').src="https://img.icons8.com/ios-glyphs/60/7115F2/circled-left.png"
+    }
+
+    const voltaCor = () => {
+        document.getElementById('voltar').src="https://img.icons8.com/ios-glyphs/60/000000/circled-left.png"
+    }
+
     return (
-      <img  className="backf" id="avancar" src="https://img.icons8.com/ios-filled/50/000000/circled-left-2.png" onClick={recuar} alt='->'></img>
+      <img  className="backf" id="voltar" src="https://img.icons8.com/ios-glyphs/60/000000/circled-left.png" onMouseOver={mudaCor} onMouseOut={voltaCor} onClick={recuar} alt='->'></img>
     );
   }
 

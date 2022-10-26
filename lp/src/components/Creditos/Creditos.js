@@ -3,6 +3,7 @@ import '../../css/criadores.css'
 import '../../css/fonts.css'
 import Voltar from "./Funcoes/Voltar"
 import Avancar from "./Funcoes/Avancar"
+import Primeiro from "./img/autores/primeiro.jpg"
 
 
 var posicao = 0;
@@ -18,7 +19,7 @@ function Creditos (){
              <div class="col-8">
                 <p id="madeby">Feito por:</p>
                 <p id="name">Rafael Romariz</p>
-                <img className="rounded-circle" id="foto" src='https://github.com/IRMZI/Landing-Page-teufuturo/blob/main/imgs/autores/primeiro.jpg?raw=true' alt="200X200"></img>
+                <img className="rounded-circle" id="foto" src={Primeiro} alt="200X200"></img>
              </div>
                 <div class="col-2">
                   <Avancar />
