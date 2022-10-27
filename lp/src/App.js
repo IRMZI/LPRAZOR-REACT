@@ -6,6 +6,7 @@ import Sidebar from './components/Sidebar/index'
 import { useState } from 'react';
 import Firstsection from './components/FirstSection';
 
+
 const App = () => {
   const [isOpen, setIsOpen] = useState(false)
   

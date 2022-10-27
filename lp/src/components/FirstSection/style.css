@@ -25,3 +25,48 @@
     padding-top: 10px;
     margin: 0;
 }
+
+#pcrazor{
+    display: flex;
+    height: auto;
+    width: 100%;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 24px;
+    justify-content: space-between;
+}
+#titulodesign{
+    padding-top: 10%;
+    font-size: 5vmin;
+    color: #FFFFFF;
+    text-align: start;
+    font-family: Nunito;
+}
+#descdesign{
+    padding: 5px;
+    font-size: 3vmin;
+    color: #6B6767;
+    font-family: Nunito;
+}
+.button{
+    font-size: 20px;
+    font-family:Nunito;
+    padding: 10px 8px;
+    width: 40%;
+    color: #FFFFFF;
+    background-color: #7115F2;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 15px;
+
+}
+
+#heroImage{
+ width: 50%;
+ height: auto;
+}
+a{
+    text-decoration: none;
+    text-decoration-color: #7115F2;;
+}

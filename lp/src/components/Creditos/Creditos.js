@@ -27,7 +27,9 @@ function Creditos (){
           </div>
     </div>
 <br></br>
+  <div>
   <a id="textoPrim"> Desenvolvedor front-end | UI/UX</a>
+  </div>
 <br></br>
     <div id="ctt">
         <a id="linkedin" href="http://linkedin.com/in/rafael-romariz-b2b45322b/">
