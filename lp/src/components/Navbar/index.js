@@ -9,13 +9,13 @@ import {
   NavItem,
   NavLinks,
 } from "./NavbarElements";
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
   return (
     <>
       <Nav>
         <NavbarContainer>
           <Navlogo to="/">RAZOR</Navlogo>
-          <MobileIcon>
+          <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>

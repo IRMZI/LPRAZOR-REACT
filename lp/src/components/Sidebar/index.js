@@ -1,17 +1,17 @@
 import React from 'react'
 import { SidebarContainer, Icon, CloseIcon, SidebarWraper, SidebarMenu, SidebarLink } from './SidebarElements'
-const Sidebar = () => {
+const Sidebar = ({ isOpen, toggle}) => {
   return (
-    <SidebarContainer>
-        <Icon>
+    <SidebarContainer isOpen={isOpen} onClick={toggle}>
+        <Icon onClick={toggle}>
             <CloseIcon/>
                 
         </Icon>
         <SidebarWraper>
             <SidebarMenu>
-            <SidebarLink to="inicio">Inicio</SidebarLink>
-            <SidebarLink to="razor">Quem é a razor</SidebarLink>
-            <SidebarLink to="criadores">Criadores</SidebarLink>
+            <SidebarLink to="inicio" onClick={toggle}>Inicio</SidebarLink>
+            <SidebarLink to="razor" onClick={toggle}>Quem é a razor</SidebarLink>
+            <SidebarLink to="criadores" onClick={toggle}>Criadores</SidebarLink>
             </SidebarMenu>
         </SidebarWraper>
     </SidebarContainer>

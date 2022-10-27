@@ -1,0 +1,27 @@
+.firstsection{
+    background-color: #242424;
+
+}
+
+
+.titulobranco{
+    font-size: 5vmin;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: Nunito;
+    padding-top: 5%;
+}
+.tituloroxo{
+    font-size: 6vmin;
+    font-family: Orbitron;
+    color: #7115F2;
+    text-align: center;
+}
+#OHW{
+    font-size: 7vmin;
+    text-align: center;
+    font-family: Russo One;
+    color: #EF7BDC;
+    padding-top: 10px;
+    margin: 0;
+}
