@@ -1,0 +1,25 @@
+.foot{
+    padding-top: 10px;
+    border-top: #FFFFFF;
+    border-width: 4px;
+    border-style: solid;
+}
+.imagemfinal{
+    width: 200px;
+}
+.FooterWrapper{
+    padding-top: 10%;
+    background-color: #242424;
+    display: flex;
+    justify-content: space-between;
+}
+.footerdesign{
+    padding: 5px;
+    font-size: 1.5vmin;
+    color: #6B6767;
+    font-family: Nunito
+}
+.last{
+    text-align: end;
+}
+

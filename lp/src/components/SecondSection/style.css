@@ -1,0 +1,78 @@
+.ryzen{
+    box-shadow: 10px 10px 10px #FF3D00;
+    align-items: center;
+}
+#tituloitem{
+    font-size: 5vmin;
+    color: #242424;
+    font-family: Nunito;
+}
+#descitem{
+    font-size: 3vmin;
+    color: #242424;
+    font-family: Nunito;
+    padding-bottom: 10px;
+}
+
+#tituloryzen{
+    font-size: 5vmin;
+    color: #d4d4d4;
+    font-family: Nunito;
+}
+#descryzen{
+    font-size: 3vmin;
+    color: #d4d4d4;
+    font-family: Nunito;
+    padding-bottom: 10px;
+}
+
+#nomeryzen{
+    font-size: 5vmin;
+    color: #FFFFFF;
+    font-family: Nunito;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.SecondSection{
+    padding-top: 10%;
+    text-align: center;
+    background-color: #242424;;
+}
+
+.player-wrapper {
+    position: relative;
+    padding-top: 20%; 
+  }
+  
+  .react-player {
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #nomertx{
+    padding-top: 10%;
+    color: #FFFFFF; 
+    font-size: 5vmin;
+    font-family: Nunito;
+ }
+ 
+ #rtx{
+     width: 40%;
+     height: auto;
+     margin-bottom: 20%;
+     box-shadow: 10px 10px 10px #1CB82C;
+ }
+ #ssd{
+     width: 40%;
+     height: auto;
+     box-shadow: 10px 10px 18px #3500f7;
+     margin-bottom: 30%;
+ }
+ 
+ #nomeSSD{
+     color: #FFFFFF; 
+     font-size: 4vmin;
+     font-family: Nunito;
+ }

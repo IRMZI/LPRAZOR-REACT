@@ -5,6 +5,9 @@ import Navbar from "./components/Navbar/index"
 import Sidebar from './components/Sidebar/index'
 import { useState } from 'react';
 import Firstsection from './components/FirstSection';
+import SecondSection from './components/SecondSection';
+import Footer from './components/Footer';
+import ThirdSection from './components/ThirdSection';
 
 
 const App = () => {
@@ -19,7 +22,10 @@ const App = () => {
      <Sidebar isOpen={isOpen} toggle={toggle}/>
      <Navbar toggle={toggle}/>
      <Firstsection/>
+     <SecondSection/>
+     <ThirdSection/>
      <Creditos/>
+     <Footer/>
     </Router>
   );
 }
