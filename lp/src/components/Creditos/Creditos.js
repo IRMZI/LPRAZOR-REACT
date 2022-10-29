@@ -4,6 +4,9 @@ import '../../css/fonts.css'
 import Voltar from "./Funcoes/Voltar"
 import Avancar from "./Funcoes/Avancar"
 import Primeiro from "./img/autores/primeiro.jpg"
+import Segundo from './img/autores/segundo.jpg'
+import Terceiro from './img/autores/terceiro.png'
+import Quarto from './img/autores/quarto.png'
 
 
 var posicao = 0;
@@ -19,7 +22,13 @@ function Creditos (){
              <div class="col-8">
                 <p id="madeby">Feito por:</p>
                 <p id="name">Rafael Romariz</p>
-                <img className="rounded-circle" id="foto" src={Primeiro} alt="200X200"></img>
+                <div class="text-center">
+                <img className="rounded-circle img-fluid foto" id="foto-primeiro" src={Primeiro} alt="200X200"></img>
+                <img className="rounded-circle img-fluid foto" id="foto-segundo" src={Segundo} alt="200X200"></img>
+                <img className="rounded-circle img-fluid foto" id="foto-terceiro" src={Terceiro} alt="200X200"></img>
+                <img className="rounded-circle img-fluid foto" id="foto-quarto" src={Quarto} alt="200X200"></img>
+                </div>
+
              </div>
                 <div class="col-2">
                   <Avancar />

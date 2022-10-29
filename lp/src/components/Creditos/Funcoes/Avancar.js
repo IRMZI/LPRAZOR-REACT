@@ -1,3 +1,4 @@
+import '../../../css/criadores.css'
 
 
 
@@ -10,7 +11,7 @@ function Avancar() {
         if (posicao === 1)
         {
             document.getElementById('name').innerText = "Erik Oliveira";
-            document.getElementById('foto').src="https://github.com/IRMZI/Landing-Page-teufuturo/blob/main/imgs/autores/segundo.jpg?raw=true";
+            Erik();
             document.getElementById("linkedin").href = "https://www.linkedin.com/in/erikoliveira28";
             document.getElementById("git").href = "https://github.com/SoL1dcs";
             document.getElementById("ig").href = "http://instagram.com/erikoliveira818";
@@ -20,7 +21,7 @@ function Avancar() {
         if (posicao === 2) 
         {
             document.getElementById('name').innerText = "João Zanardi";
-            document.getElementById('foto').src="https://github.com/IRMZI/Landing-Page-teufuturo/blob/main/imgs/autores/terceiro.png?raw=true";
+            João();
             document.getElementById("linkedin").href ="https://www.linkedin.com/in/joao-vitor-565b14250/";
             document.getElementById("git").href = "https://github.com/joaoVitorZanardi";
             document.getElementById("ig").href = "https://instagram.com"; 
@@ -30,7 +31,7 @@ function Avancar() {
         if(posicao === 3)
         {
             document.getElementById('name').innerText = "Lucas";
-            document.getElementById('foto').src="https://github.com/IRMZI/Landing-Page-teufuturo/blob/main/imgs/autores/quarto.png?raw=true";
+            Lucas();
             document.getElementById("linkedin").href ="https://www.linkedin.com/in/lucas-henrique-da-silva-a72498200/";
             document.getElementById("git").href = "https://github.com";
             document.getElementById("ig").href = "http://instagram.com/lucashenrique.dasilva.77";
@@ -41,13 +42,42 @@ function Avancar() {
         {
             posicao = 0;
             document.getElementById('name').innerText = "Rafael Romariz";
-            document.getElementById('foto').src="https://github.com/IRMZI/Landing-Page-teufuturo/blob/main/imgs/autores/primeiro.jpg?raw=true";
+            Rafael();
             document.getElementById("linkedin").href = "http://linkedin.com/in/rafael-romariz-b2b45322b/";
             document.getElementById("git").href = "http://github.com/IRMZI";
             document.getElementById("ig").href = "http://instagram.com/Romariz.dev";
             document.getElementById('textoPrim').innerText='Desenvolvedor front-end | UI/UX';
         }
     }
+
+    const Rafael = () =>{
+        document.getElementById('foto-segundo').style.display = 'none';
+        document.getElementById('foto-terceiro').style.display = 'none';
+        document.getElementById('foto-quarto').style.display = 'none';
+        document.getElementById('foto-primeiro').style.display = 'inline';
+    }
+
+    const Erik = () =>{
+        document.getElementById('foto-primeiro').style.display = 'none';
+        document.getElementById('foto-terceiro').style.display = 'none';
+        document.getElementById('foto-quarto').style.display = 'none';
+        document.getElementById('foto-segundo').style.display = 'inline';
+    }
+
+    const João = () =>{
+        document.getElementById('foto-primeiro').style.display = 'none';
+        document.getElementById('foto-segundo').style.display = 'none';
+        document.getElementById('foto-quarto').style.display = 'none';
+        document.getElementById('foto-terceiro').style.display = 'inline';
+    }
+
+    const Lucas = () =>{
+        document.getElementById('foto-primeiro').style.display = 'none';
+        document.getElementById('foto-segundo').style.display = 'none';
+        document.getElementById('foto-terceiro').style.display = 'none';
+        document.getElementById('foto-quarto').style.display = 'inline';
+    }
+
     const mudaCor = () => {
         document.getElementById('avancar').src="https://img.icons8.com/ios-glyphs/60/7115F2/circled-right.png"
     }
