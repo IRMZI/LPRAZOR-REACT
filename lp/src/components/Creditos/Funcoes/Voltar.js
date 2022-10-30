@@ -14,19 +14,7 @@ const recuar = () => {
 
     
         
-
-        if (posicao === -1) //numero minimo
-        {
-            document.getElementById('name').innerText = "Lucas";
-            Lucas();
-            document.getElementById("linkedin").href ="https://www.linkedin.com/in/lucas-henrique-da-silva-a72498200/";
-            document.getElementById("git").href = "https://github.com";
-            document.getElementById("ig").href = "http://instagram.com/lucashenrique.dasilva.77";
-            document.getElementById('textoPrim').innerText="Designer e Scrum Master";
-            posicao =3;
-        }
-    
-        if (posicao === 2)
+        if (posicao === -1)
         {
             document.getElementById('name').innerText = "João Zanardi";
             João();
@@ -34,6 +22,7 @@ const recuar = () => {
             document.getElementById("git").href = "https://github.com/joaoVitorZanardi";
             document.getElementById("ig").href = "http://instagram.com"; 
             document.getElementById('textoPrim').innerText="Desenvolvedor e Lider do squad";
+            posicao = 2;
         }
     
         if (posicao === 1)
@@ -80,12 +69,6 @@ const recuar = () => {
         document.getElementById('foto-terceiro').style.display = 'inline';
     }
 
-    const Lucas = () =>{
-        document.getElementById('foto-primeiro').style.display = 'none';
-        document.getElementById('foto-segundo').style.display = 'none';
-        document.getElementById('foto-terceiro').style.display = 'none';
-        document.getElementById('foto-quarto').style.display = 'inline';
-    }
   
     const mudaCor = () => {
         document.getElementById('voltar').src="https://img.icons8.com/ios-glyphs/60/7115F2/circled-left.png"

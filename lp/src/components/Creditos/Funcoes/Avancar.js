@@ -28,17 +28,7 @@ function Avancar() {
             document.getElementById('textoPrim').innerText="Desenvolvedor e Lider do squad";
         }
     
-        if(posicao === 3)
-        {
-            document.getElementById('name').innerText = "Lucas";
-            Lucas();
-            document.getElementById("linkedin").href ="https://www.linkedin.com/in/lucas-henrique-da-silva-a72498200/";
-            document.getElementById("git").href = "https://github.com";
-            document.getElementById("ig").href = "http://instagram.com/lucashenrique.dasilva.77";
-            document.getElementById('textoPrim').innerText="Designer e Scrum Master";
-        }
-    
-        if (posicao === 4)//Numero maximo
+        if (posicao === 3)//Numero maximo
         {
             posicao = 0;
             document.getElementById('name').innerText = "Rafael Romariz";
@@ -69,13 +59,6 @@ function Avancar() {
         document.getElementById('foto-segundo').style.display = 'none';
         document.getElementById('foto-quarto').style.display = 'none';
         document.getElementById('foto-terceiro').style.display = 'inline';
-    }
-
-    const Lucas = () =>{
-        document.getElementById('foto-primeiro').style.display = 'none';
-        document.getElementById('foto-segundo').style.display = 'none';
-        document.getElementById('foto-terceiro').style.display = 'none';
-        document.getElementById('foto-quarto').style.display = 'inline';
     }
 
     const mudaCor = () => {
