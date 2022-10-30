@@ -1,5 +1,4 @@
 import React from 'react'
-import ResponsivePlayer from './info'
 import './style.css'
 import video from '../../video/RyzenCPU.mp4'
 import rtx from '../../components/SecondSection/img/RTX 3090.png'
