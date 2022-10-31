@@ -5,13 +5,15 @@
     border-style: solid;
 }
 .imagemfinal{
-    width: 200px;
+    width: 80%;
+
 }
 .FooterWrapper{
     padding-top: 10%;
     background-color: #242424;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .footerdesign{
     padding: 5px;

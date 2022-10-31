@@ -10,7 +10,7 @@ const Footer = () => {
  <p class="footerdesign">atendimento@razorcomputadores.com.br</p>
     </div>
    <div>
-   <img src={logofinal} alt=""/>
+   <img className="imagemfinal" src={logofinal} alt=""/>
    </div>
    <div>
    <p class="footerdesign last">Rua Dr. Plínio Moura, 153-C, Vila Planaltina</p>
