@@ -13,6 +13,7 @@ var posicao = 0;
 
 function Creditos (){
     return(
+      <section  id='criadores'>
         <div id="divCreditos">
             <div class="container">
               <div class="row">
@@ -52,6 +53,7 @@ function Creditos (){
         </a>
       </div>
  </div>
+ </section>
     )
 }
 

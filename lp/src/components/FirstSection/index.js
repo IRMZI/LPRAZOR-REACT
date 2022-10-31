@@ -4,6 +4,7 @@ import pcrazor from './images/pcrazorfundoremovido.png'
 import 'bootstrap/dist/css/bootstrap.min.css';
 const Firstsection = () => {
   return (
+    <section id='inicio'> 
     <div class="firstsection">
     <h1 class="titulobranco">LANÇAMENTO</h1>
     <h1 class="tituloroxo">WORKSTATION PRO</h1>
@@ -20,7 +21,7 @@ const Firstsection = () => {
   
     </div>
     </div>
-    
+    </section>
   )
 }
 
