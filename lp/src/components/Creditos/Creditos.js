@@ -1,8 +1,6 @@
 import '../../css/reset.css'
 import '../../css/criadores.css'
 import '../../css/fonts.css'
-import Voltar from "./Funcoes/Voltar"
-import Avancar from "./Funcoes/Avancar"
 import Primeiro from "./img/autores/primeiro.jpg"
 import Segundo from './img/autores/segundo.jpg'
 import Terceiro from './img/autores/terceiro.png'
@@ -17,8 +15,8 @@ function Creditos (){
             <div class="container">
               <div class="row">
                 <div class="col-2">
-                  <Voltar />
-                 </div>
+                  <img  className="backf" id="voltar" src="https://img.icons8.com/ios-glyphs/60/000000/circled-left.png" onClick={Recuar} onMouseOver={mudaCorL} onMouseOut={voltaCorL} alt='->' ></img>
+                </div>
              <div class="col-8">
                 <p id="madeby">Feito por:</p>
                 <p id="name">Rafael Romariz</p>
@@ -31,7 +29,7 @@ function Creditos (){
 
              </div>
                 <div class="col-2">
-                  <Avancar />
+                  <img  className="backf" id="avancar" src="https://img.icons8.com/ios-filled/50/000000/circled-right.png" onMouseOver={mudaCorR} onMouseOut={voltaCorR} onClick={Avancar} alt='->'></img>
                 </div>
           </div>
     </div>
@@ -56,5 +54,102 @@ function Creditos (){
 }
 
 
+const Avancar = () => {    
+    posicao++;
+
+    if (posicao === 1)
+    {    
+        Erik();
+    }
+
+    if (posicao === 2) 
+    {
+        
+        João();
+
+    }
+
+    if (posicao === 3)//Numero maximo
+    {
+        posicao = 0;
+        Rafael();
+    }
+}
+
+const Recuar = () => {
+  posicao -=1;
+      
+      if (posicao === -1)
+      {
+          João();
+          posicao = 2;
+      }
+  
+      if (posicao === 1)
+      {
+          Erik();
+      }
+  
+      if (posicao === 0)
+      {
+          Rafael();
+      }
+  }
+
+
+const Rafael = () =>{
+  document.getElementById('name').innerText = "Rafael Romariz";
+  document.getElementById("linkedin").href = "http://linkedin.com/in/rafael-romariz-b2b45322b/";
+  document.getElementById("git").href = "http://github.com/IRMZI";
+  document.getElementById("ig").href = "http://instagram.com/Romariz.dev";
+  document.getElementById('textoPrim').innerText='Desenvolvedor front-end | UI/UX';
+
+  document.getElementById('foto-segundo').style.display = 'none';
+  document.getElementById('foto-terceiro').style.display = 'none';
+  document.getElementById('foto-quarto').style.display = 'none';
+  document.getElementById('foto-primeiro').style.display = 'inline';
+}
+
+const Erik = () =>{
+  document.getElementById('name').innerText = "Erik Oliveira";
+  document.getElementById("linkedin").href = "https://www.linkedin.com/in/erikoliveira28";
+  document.getElementById("git").href = "https://github.com/SoL1dcs";
+  document.getElementById("ig").href = "http://instagram.com/erikoliveira818";
+  document.getElementById('textoPrim').innerText='Lider de desenvolvimento';
+
+  document.getElementById('foto-primeiro').style.display = 'none';
+  document.getElementById('foto-terceiro').style.display = 'none';
+  document.getElementById('foto-quarto').style.display = 'none';
+  document.getElementById('foto-segundo').style.display = 'inline';
+}
+
+const João = () =>{
+  document.getElementById('name').innerText = "João Zanardi";
+  document.getElementById("linkedin").href ="https://www.linkedin.com/in/joao-vitor-565b14250/";
+  document.getElementById("git").href = "https://github.com/joaoVitorZanardi";
+  document.getElementById("ig").href = "https://instagram.com"; 
+  document.getElementById('textoPrim').innerText="Desenvolvedor e Lider do squad";
+
+  document.getElementById('foto-primeiro').style.display = 'none';
+  document.getElementById('foto-segundo').style.display = 'none';
+  document.getElementById('foto-quarto').style.display = 'none';
+  document.getElementById('foto-terceiro').style.display = 'inline';
+}
+
+const mudaCorR = () => {
+  document.getElementById('avancar').src="https://img.icons8.com/ios-glyphs/60/7115F2/circled-right.png"
+}
+
+const voltaCorR = () => {
+  document.getElementById('avancar').src="https://img.icons8.com/ios-glyphs/60/000000/circled-right.png"
+}
+
+const mudaCorL = () => {
+  document.getElementById('voltar').src="https://img.icons8.com/ios-glyphs/60/7115F2/circled-left.png"
+}
+
+const voltaCorL = () => {
+  document.getElementById('voltar').src="https://img.icons8.com/ios-glyphs/60/000000/circled-left.png"
+}
 
 export default Creditos
