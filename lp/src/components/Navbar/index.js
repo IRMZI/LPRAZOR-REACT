@@ -14,19 +14,19 @@ const Navbar = ({ toggle }) => {
     <>
       <Nav>
         <NavbarContainer>
-          <Navlogo to="/">RAZOR</Navlogo>
+          <Navlogo to="inicio" spy={true} smooth={true} offset={50} duration={500}>RAZOR</Navlogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="inicio">Inicio</NavLinks>
+              <NavLinks to="inicio" spy={true} smooth={true} offset={50} duration={500}>Inicio</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="razorSite">Quem é a razor</NavLinks>
+              <NavLinks to='Crazor'>Quem é a razor</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="criadores">Criadores</NavLinks>
+              <NavLinks to="criadores" spy={true} smooth={true} offset={50} duration={500}>Criadores</NavLinks>
             </NavItem>
           </NavMenu>
         </NavbarContainer>
